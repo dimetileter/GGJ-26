@@ -104,7 +104,6 @@ npm run build:win
 ```
 
 > 📁 Build dosyaları `dist/` klasöründe oluşturulur.
-
 ---
 
 ## 📋 Tüm Komutlar
@@ -158,9 +157,27 @@ Bu proje **Global Game Jam 2026** için geliştirilmiştir.
 
 <img src="https://img.shields.io/badge/🎮_GGJ_2026-Katılımcı-ff6b6b?style=flat-square" alt="GGJ 2026"/>
 
-**Tema:** *[Jam Teması]*
+</div>
+
+---
+
+## 🤖 Vibe Coding Deneyimi
+
+<div align="center">
+
+🎯 **Bu oyun %100 Vibe Coding ile geliştirilmiştir!**
 
 </div>
+
+Daha önce hiç oyun geliştirme deneyimim olmadığı için, hem Global Game Jam sürecini boş geçirmemek hem de **Vibe Coding** konseptini denemek adına bu oyunu tamamen yapay zeka destekli kodlama (vibe coding) ile geliştirdim.
+
+> 💭 **Vibe Coding Nedir?**  
+> Vibe Coding, yapay zeka araçlarıyla birlikte kod yazma deneyimidir. Geliştirici, fikirlerini ve isteklerini tanımlar, AI ise kodu oluşturur. Bu süreçte öğrenme ve deneyim kazanma ön plandadır.
+
+Bu proje, oyun geliştirme dünyasına ilk adımım oldu ve gösterdi ki:
+- ✨ Sıfırdan bir şey yaratmak için uzman olmak şart değil
+- 🚀 Yeni teknolojileri denemekten korkmamak gerekiyor
+- 🎮 Game Jam'ler öğrenmek için harika fırsatlar!
 
 ---
 
