@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masquerade - Maske Giydirme Oyunu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Title -->
+    <h1 class="game-title">✨ Maskeli Balo ✨</h1>
+    
+    <!-- Main Stage Area -->
+    <div class="stage">
+      <!-- Background decorations -->
+      <div class="bg-decorations">
+        <div class="chandelier"></div>
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✧</div>
+        <div class="sparkle sparkle-3">✦</div>
+        <div class="sparkle sparkle-4">✧</div>
+      </div>
+      
+      <!-- Character Area -->
+      <div class="character-area" id="character-area">
+        <div class="character">
+          <!-- Hair -->
+          <div class="hair"></div>
+          <div class="hair-side hair-left"></div>
+          <div class="hair-side hair-right"></div>
+          
+          <!-- Face -->
+          <div class="face">
+            <!-- Eyes -->
+            <div class="eye eye-left">
+              <div class="pupil"></div>
+            </div>
+            <div class="eye eye-right">
+              <div class="pupil"></div>
+            </div>
+            
+            <!-- Nose -->
+            <div class="nose"></div>
+            
+            <!-- Lips -->
+            <div class="lips"></div>
+            
+            <!-- Blush -->
+            <div class="blush blush-left"></div>
+            <div class="blush blush-right"></div>
+          </div>
+          
+          <!-- Neck & Shoulders -->
+          <div class="neck"></div>
+          <div class="shoulders">
+            <div class="dress-detail"></div>
+          </div>
+          
+          <!-- Earrings -->
+          <div class="earring earring-left">◆</div>
+          <div class="earring earring-right">◆</div>
+          
+          <!-- Mask placeholder on face -->
+          <div class="mask-slot" id="mask-slot"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Instructions -->
+    <p class="instructions">Bir maske seçin ve yüze sürükleyin veya tıklayın!</p>
+    
+    <!-- Mask Dock -->
+    <div class="dock" id="mask-dock">
+      <!-- Butterfly Mask -->
+      <div class="mask-item" data-mask="butterfly" draggable="true">
+        <div class="mask mask-butterfly">
+          <div class="butterfly-wing wing-left"></div>
+          <div class="butterfly-wing wing-right"></div>
+          <div class="butterfly-body"></div>
+        </div>
+        <span class="mask-name">Kelebek</span>
+      </div>
+      
+      <!-- Venetian Mask -->
+      <div class="mask-item" data-mask="venetian" draggable="true">
+        <div class="mask mask-venetian">
+          <div class="venetian-base"></div>
+          <div class="venetian-eye venetian-eye-left"></div>
+          <div class="venetian-eye venetian-eye-right"></div>
+          <div class="venetian-nose"></div>
+          <div class="venetian-decor"></div>
+        </div>
+        <span class="mask-name">Venedik</span>
+      </div>
+      
+      <!-- Feathered Mask -->
+      <div class="mask-item" data-mask="feathered" draggable="true">
+        <div class="mask mask-feathered">
+          <div class="feather-base"></div>
+          <div class="feather feather-1"></div>
+          <div class="feather feather-2"></div>
+          <div class="feather feather-3"></div>
+          <div class="feather-eye feather-eye-left"></div>
+          <div class="feather-eye feather-eye-right"></div>
+        </div>
+        <span class="mask-name">Tüylü</span>
+      </div>
+      
+      <!-- Golden Mask -->
+      <div class="mask-item" data-mask="golden" draggable="true">
+        <div class="mask mask-golden">
+          <div class="golden-base"></div>
+          <div class="golden-eye golden-eye-left"></div>
+          <div class="golden-eye golden-eye-right"></div>
+          <div class="golden-gem"></div>
+          <div class="golden-pattern golden-pattern-left"></div>
+          <div class="golden-pattern golden-pattern-right"></div>
+        </div>
+        <span class="mask-name">Altın</span>
+      </div>
+      
+      <!-- Silver Mask -->
+      <div class="mask-item" data-mask="silver" draggable="true">
+        <div class="mask mask-silver">
+          <div class="silver-base"></div>
+          <div class="silver-eye silver-eye-left"></div>
+          <div class="silver-eye silver-eye-right"></div>
+          <div class="silver-star">★</div>
+          <div class="silver-dots"></div>
+        </div>
+        <span class="mask-name">Gümüş</span>
+      </div>
+      
+      <!-- Mystic Mask -->
+      <div class="mask-item" data-mask="mystic" draggable="true">
+        <div class="mask mask-mystic">
+          <div class="mystic-base"></div>
+          <div class="mystic-eye mystic-eye-left">◈</div>
+          <div class="mystic-eye mystic-eye-right">◈</div>
+          <div class="mystic-moon">☽</div>
+          <div class="mystic-stars">✦</div>
+        </div>
+        <span class="mask-name">Mistik</span>
+      </div>
+    </div>
+    
+    <!-- Remove Mask Button -->
+    <button class="remove-btn" id="remove-btn">🗑️ Maskeyi Çıkar</button>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>

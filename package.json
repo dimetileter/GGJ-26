@@ -1,0 +1,35 @@
+{
+  "name": "masquerade-game",
+  "version": "1.0.0",
+  "description": "Maskeli Balo Maske Giydirme Oyunu",
+  "main": "main.js",
+  "scripts": {
+    "dev": "npx http-server . -p 3000 -o",
+    "electron": "electron .",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.masquerade.game",
+    "productName": "Masquerade Game",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!dist/**"
+    ],
+    "mac": {
+      "target": "dmg",
+      "icon": "icon.png"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "icon.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  }
+}
