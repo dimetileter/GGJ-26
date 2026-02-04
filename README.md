@@ -107,6 +107,20 @@ npm run build:win
 
 ---
 
+## 📋 Tüm Komutlar
+
+| Komut | Açıklama |
+|-------|----------|
+| `npm install` | 📦 Bağımlılıkları yükle (ilk kurulumda gerekli) |
+| `npm run dev` | 🌐 Tarayıcıda çalıştır (http://localhost:3000) |
+| `npm run electron` | 🖥️ Electron masaüstü uygulaması olarak çalıştır |
+| `npm run build:mac` | 🍎 macOS için .dmg dosyası oluştur |
+| `npm run build:win` | 🪟 Windows için .exe dosyası oluştur |
+
+> 💡 **İpucu:** Sunucuyu durdurmak için terminalde `Ctrl + C` tuşlarına basın.
+
+---
+
 ## 🎨 Maske Koleksiyonu
 
 <table>
