@@ -89,6 +89,8 @@ npm run dev
 npm run electron
 ```
 
+> 🌐 **Tarayıcıda Açın:** Sunucu başladıktan sonra **http://localhost:3000** adresine gidin.
+
 ---
 
 ## 📦 Build Etme
